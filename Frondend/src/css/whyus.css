@@ -1,0 +1,101 @@
+/* ================= WHY US SECTION ================= */
+.whyus-section {
+  width: 100%;
+  padding: 80px 40px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.whyus-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a2b47;
+  margin-bottom: 50px;
+}
+
+/* ================= CONTAINER ================= */
+.whyus-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* ================= CARD ================= */
+.whyus-card {
+  background: #f7f9fc;
+  padding: 30px 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.whyus-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ================= ICON FIX ================= */
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whyus-icon {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+/* Icon background colors */
+.blue-bg {
+  background: #1a73e8;
+}
+
+.green-bg {
+  background: #2ecc71;
+}
+
+.orange-bg {
+  background: #ff8c00;
+}
+
+.darkgreen-bg {
+  background: #1e8f4b;
+}
+
+/* ================= TEXT ================= */
+.whyus-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1a2b47;
+}
+
+.whyus-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .whyus-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .whyus-container {
+    grid-template-columns: 1fr;
+  }
+
+  .whyus-title {
+    font-size: 28px;
+  }
+}
+ 

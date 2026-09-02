@@ -1,0 +1,339 @@
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+
+  height: 82px;
+
+  display: flex;
+  align-items: center;
+
+  background: rgba(22, 25, 39, 0.96);
+
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+
+  z-index: 1000;
+
+  transition:
+    transform 0.35s ease,
+    background 0.3s ease;
+}
+
+/* Hide navbar when scrolling down */
+.navbar.hide {
+  transform: translateY(-110%);
+}
+
+/* =========================================================
+   NAVBAR INNER
+========================================================= */
+
+.navbar-inner {
+  width: 100%;
+
+  /* max-width: 1600px; */
+
+  margin: 0 auto;
+
+  /* padding: 0 55px; */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+}
+
+.logo-mark {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(112, 224, 192, 0.06);
+
+  border: 1px solid rgba(112, 224, 192, 0.18);
+
+  overflow: hidden;
+}
+
+.logo-image {
+  width: 42px;
+  height: 42px;
+
+  object-fit: contain;
+}
+
+.logo-text-wrap {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.logo-text {
+  color: #f4f5f8;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 19px;
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+.logo-tagline {
+  color: #70e0c0;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-left: auto; /* pushes all menus to the right */
+}
+
+.nav-links button {
+  position: relative;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  padding: 12px 18px;
+
+  color: #aeb5c3;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    color 0.3s ease,
+    background 0.3s ease;
+}
+
+.nav-links button:hover {
+  color: #ffffff;
+}
+
+/* Underline effect */
+
+.nav-links button:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  left: 18px;
+  right: 18px;
+  bottom: 5px;
+
+  height: 2px;
+
+  background: #70e0c0;
+
+  transform: scaleX(0);
+
+  transition: transform 0.3s ease;
+}
+
+.nav-links button:not(:last-child):hover::after {
+  transform: scaleX(1);
+}
+
+/* =========================================================
+   CONTACT BUTTON
+========================================================= */
+
+.nav-links button:last-child {
+  margin-left: 10px;
+
+  padding: 13px 24px;
+
+  color: #70e0c0;
+
+  border: 1px solid rgba(112, 224, 192, 0.5);
+
+  border-radius: 10px;
+
+  background: rgba(112, 224, 192, 0.03);
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.nav-links button:last-child:hover {
+  background: #70e0c0;
+
+  border-color: #70e0c0;
+
+  color: #08130f;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 25px rgba(112, 224, 192, 0.18);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .navbar {
+    height: 72px;
+  }
+
+  .navbar-inner {
+    padding: 0 30px;
+  }
+
+  .logo-mark {
+    width: 46px;
+    height: 46px;
+  }
+
+  .logo-image {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo-text {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-links button {
+    padding: 10px 11px;
+
+    font-size: 13px;
+  }
+
+  .nav-links button:last-child {
+    padding: 11px 16px;
+
+    margin-left: 5px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 68px;
+  }
+
+  .navbar-inner {
+    padding: 0 18px;
+  }
+
+  .logo-mark {
+    width: 42px;
+    height: 42px;
+  }
+
+  .logo-image {
+    width: 34px;
+    height: 34px;
+  }
+
+  .logo-text {
+    font-size: 14px;
+  }
+
+  .logo-tagline {
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .nav-links button {
+    padding: 8px 7px;
+
+    font-size: 11px;
+  }
+
+  .nav-links button:last-child {
+    padding: 9px 11px;
+
+    margin-left: 2px;
+
+    font-size: 10px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 560px) {
+  .logo-text-wrap {
+    display: none;
+  }
+
+  .nav-links {
+    gap: 0;
+  }
+
+  .nav-links button {
+    padding: 7px 5px;
+
+    font-size: 10px;
+  }
+
+  .nav-links button:last-child {
+    padding: 8px 9px;
+
+    font-size: 9px;
+  }
+}

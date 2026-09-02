@@ -1,0 +1,138 @@
+/* HERO SECTION */
+.about-hero {
+  background: #f7f9fc;
+  padding: 140px 20px 80px;
+}
+
+.about-hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-hero-text h1 {
+  font-size: 42px;
+  color: #0b1c33;
+  margin-bottom: 20px;
+}
+ 
+.about-hero-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 520px;
+}
+
+/* STATS */
+.about-stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.about-stats div {
+  background: #ffffff;
+  padding: 18px 22px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-stats h3 {
+  font-size: 26px;
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+.about-stats span {
+  font-size: 14px;
+  color: #777;
+}
+
+/* HERO IMAGE */
+.about-hero-image img {
+  width: 100%;
+  border-radius: 14px;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+/* ABOUT CONTENT */
+.about-content {
+  padding: 80px 20px;
+}
+
+.about-content-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-content h2 {
+  color: #0b1c33;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.about-content img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* VISION & MISSION */
+.vision-mission {
+  background: #eef5e9;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.vm-card {
+  background: #fff;
+  padding: 30px;
+  max-width: 480px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.vm-card h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.vm-card p {
+  color: #555;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-hero-inner,
+  .about-content-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .vision-mission {
+    flex-direction: column;
+    align-items: center;
+  }
+}
