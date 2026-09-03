@@ -40,7 +40,7 @@ const WhyUs = () => {
           <div className="icon-circle orange-bg">
             <FaChartLine className="whyus-icon" />
           </div>
-          <h3>Expert Research Solutions</h3>
+          <h3>Specialized Research Services</h3>
           <p>
             Get comprehensive assistance with research methodology, coding,
             data analysis, machine learning, and research reporting.
