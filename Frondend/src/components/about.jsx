@@ -30,7 +30,7 @@ const About = () => {
             At Greams Consultant, we are committed to providing
             high-quality, confidential, ethical, and customized research
             support. With 5 years of experience, we help bridge the gap between
-            research ideas and successful publication through expert guidance,
+            research ideas and successful publication through excellent guidance,
             technical implementation, and continuous support. Our vision is to
             empower researchers and PhD scholars to produce meaningful,
             high-quality research and achieve successful academic outcomes.
