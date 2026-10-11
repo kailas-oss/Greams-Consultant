@@ -139,7 +139,7 @@ const Contacts = () => {
                 </h4>
 
                 <p>
-                  Pammam, Marthandam, Kanyakumari - 629165
+                  Parassala ,Kaliyakkavilai, Kanyakumari - 695502
                 </p>
               </div>
             </div>
