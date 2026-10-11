@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="footer-col">
           <h3>CONTACT</h3>
           <p>Email: greamsinternational@gmail.com</p>
-          <p>Phone: +91 90453 36109</p>
-          <p>Location: Pammam, India</p>
+          <p>Phone: +91 94453 36119</p>
+          <p>Location: Parassala ,Kaliyakkavilai, India</p>
         </div>
 
         {/* Column 2: Company */}
