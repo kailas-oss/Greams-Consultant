@@ -33,7 +33,7 @@ const Footer = () => {
             <li><p>5+ Years of Experience</p></li>
             <li><p>Confidential Support</p></li>
             <li><p>Ethical Research Practices</p></li>
-            <li><p>Expert Research Guidance</p></li>
+            <li><p>Excellent Research Guidance</p></li>
             <li><p>Timely Delivery</p></li>
           </ul>
         </div>
