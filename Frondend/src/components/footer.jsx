@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Column 1: Contact */}
         <div className="footer-col">
           <h3>CONTACT</h3>
-          <p>Email: greamsinternational@gmail.com</p>
+          <p>Email: greamsgreamsssss@gmail.com</p>
           <p>Phone: +91 94453 36119</p>
           <p>Location: Parassala ,Kaliyakkavilai, India</p>
         </div>
