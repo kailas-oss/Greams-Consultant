@@ -171,7 +171,7 @@ const Contacts = () => {
                 <h3>Email Us</h3>
 
                 <p>
-                  greamsinternational@gmail.com
+                  greamsgreamsssss@gmail.com
                 </p>
               </div>
             </div>
