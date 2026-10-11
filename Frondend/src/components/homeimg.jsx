@@ -64,7 +64,7 @@
             <span className="feature-number">02</span>
             <h3>Data & Coding</h3>
             <p>
-              Expert assistance with analysis, programming, AI and machine learning.
+              Excellent assistance with analysis, programming, AI and machine learning.
             </p>
           </div>
 
